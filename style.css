@@ -1,0 +1,60 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li.brand {
+    margin-right: 10px;
+    background-color: #0066cc;
+}
+
+nav img {
+    width: 10%;
+    height: 10%;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+nav li a:hover {
+    /*background-color: #111;*/
+    background-color: #3399ff;
+}
+
+main {
+    padding: 100px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+main h1 {
+    font-weight: bold;
+}
+
+hr {
+	margin: 100px;
+	margin-top: 10px;
+}

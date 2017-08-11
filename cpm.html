@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Jouza's Playground
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cpm.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="index.html">Jouza</a></li>
+            <li><a href="cpm.html">CPM Meter</a></li>
+            <li><a href="">Singletap Meter</a></li>
+            <li><a href="">Reaction Meter</a></li>
+            <li><a href="">Placeholder</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>CPM Meter</h1>
+        <div class="desc">CPM Meter allows you to measure your Clicks Per Minute, aka "how many times can I click during a minute". It uses an accurate method of measuring your keypresses and the time. The CPM is real-time, and has no time limit.To begin, start clicking, or click the Start button.
+            <br>If you want to stop, click the stop button. When stopped, you can restart the meter by pressing a key, or by clicking the Start button again.</div>
+        <div style="font-style: italic;">Hint: You can hit multiple keys at once.</div>
+        <div>
+            <div>
+                <button onclick="startTimer()" class="button_blue">Start</button>
+                <button onclick="stopTimer()" class="button_red">Stop</button>
+            </div>
+            Performance:
+            <div id="scoreMeter">
+  <div id="scoreBar"></div>
+</div>      Recent Keys:
+            <div id="recentKeys">&nbsp;</div>
+            Time Elapsed:
+            <div id="timeElapsed">0</div>
+            Click Count:
+            <div id="clickCount">0</div>
+            Current CPM:
+            <div id="cpm" class="bold"> N/A
+            </div>
+            Best CPM:
+            <div id="best" class="underline">N/A
+            </div>
+            <script src="cpm.js"></script>
+        </div>
+    </main>
+    <hr>
+</body>
+
+</html>
